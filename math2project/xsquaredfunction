@@ -11,4 +11,24 @@ def ask(question):
   
 name = ask(c.base3 + "What is your name?")
 
-q1 = ask(c.cyan + "You are on a spaceship,  " + name)
+def diecrew():
+    print("""You have lost members of your crew, your PTSD just got
+    worse.""")
+
+q1 = ask(c.cyan + name + """ is on a spaceship, about to take off. 
+They are planning to take a trip to space. They are currently on
+a naval base in the Gulf of Guinea in the Atlantic Ocean. It
+is a mission to Mars. (They are prepared to never return to Earth.)
+The mission seems like a success, but when they are about to leave
+the atmosphere, their ship has a malfunction. The ship is now headed
+in a curved shape, like f(x) = the square root of x. The crew is desperately trying to fix the issue,
+but for now they have to keep the ship stable so they do not blow up.
+The captain wants to keep as many people alive as possible, there are
+29 current crew members. Their current situation demands them to 
+solve this problem:
+
+Answers:
+To fix the orbital maneuvering engines- Problem sheet #1""")
+
+if ['a', 'A', '1st choice', '1st answer']:
+    
