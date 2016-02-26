@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 import skilstak.colors as c
 
+print(c.clear)
+
 def ask(question):
   print(c.red + question + c.reset)
-  answer = input("> " + base.3).lower().strip()
+  answer = input("> " + c.base3).lower().strip()
   print(c.reset)
   return answer
+  
+name = ask(c.base3 + "What is your name?")
+
+q1 = ask(c.cyan + "You are on a spaceship,  " + name)
