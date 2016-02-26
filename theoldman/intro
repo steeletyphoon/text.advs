@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+import skilstak.colors as c
+import random
+
+print(c.clear)
+
+def ask(question):
+  print(c.base3 + question + c.reset)
+  answer = input("> " + c.base3).lower().strip()
+  print(c.reset)
+  return answer
+
+
+name = ask(c.base3 + "What is your name youngster?")
+print(name)
+
+#kids these days don't know how to give respect, speak up I cant hear. Im over in
+#a corner for crying out loud.(This is the response I will input for no answer or saying anything but yes.)
+
+f1 = ask(c.base3 + "You said your name was " + name + "?")
+if ['yes', 'y', 'yeah', 'thats correct', 'uh-huh']:
+    f2 = ask("Okay adventurer " + name + """ Do you need to borrow any clothes, you were sound sleep and almost naked when I found you. Not
+    ...to mention barely alive.""")
+else:
+    print("How rude that you wont even tell me the one who saved you your name, get out of my house [gets shot with a shotgun]")
