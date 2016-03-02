@@ -145,10 +145,10 @@ report back. But for now all you need to do to get home is solve this problem:
 (See problem sheet number five)""")
 
                 if q5 in ['a', 'A']:
-                    print("""You could not return to Earth and the ship wandered forever in space with no one coming to rescue you.""")
+                    print(c.r + """You could not return to Earth and the ship wandered forever in space with no one coming to rescue you.""")
 
                 if q5 in ['b', 'B']:
-                    print("""Congragulations, you have won the game and all of your crew members made it home safely. You were awarded
+                    print(c.g + """Congragulations, you have won the game and all of your crew members made it home safely. You were awarded
 a medal for your efforts.""")
 
 
