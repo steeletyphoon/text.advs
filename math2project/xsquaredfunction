@@ -12,12 +12,22 @@ def ask(question):
 name = ask(c.base3 + "What is your name?")
 
 def diecrew():
-    print("""You have lost members of your crew, your PTSD just got
-    worse.""")
+    print(c.red + """You have lost members of your crew, your PTSD just got
+worse. The problem was only barely fixed. You just generally suck at being a
+captain.""")
+
+def livecrew():
+    print(c.g + """You have saved all of your crew, gathered provisions and
+generally ensured the safety of your, and advanced on your travels.""")
+
+def livecrew2():
+    print(c.y + """You barely made it through and with some casulties. Some of
+your crew is dead and the moral has gotten much lower. Even the problem was only
+solved halfway.""")
 
 q1 = ask(c.cyan + name + """ is on a spaceship, about to take off. 
 They are planning to take a trip to space. They are currently on
-a naval base in the Gulf of Guinea in the Atlantic Ocean. It
+a naval base in the Gulf of Guinea in the Atlantic Ocean(Point 0,0). It
 is a mission to Mars. (They are prepared to never return to Earth.)
 The mission seems like a success, but when they are about to leave
 the atmosphere, their ship has a malfunction. The ship is now headed
@@ -25,10 +35,106 @@ in a curved shape, like f(x) = the square root of x. The crew is desperately try
 but for now they have to keep the ship stable so they do not blow up.
 The captain wants to keep as many people alive as possible, there are
 29 current crew members. Their current situation demands them to 
-solve this problem:
+solve this problem so that they can fix th orbital manuevering engines.
 
-Answers:
-To fix the orbital maneuvering engines- Problem sheet #1""")
+(Sheet problem number one)
+""")
 
-if ['a', 'A', '1st choice', '1st answer']:
+if q1 in ['a', 'A', '1st choice', '1st answer']:
+    diecrew()
+if q1 in ['b', 'B',]:
+    diecrew()
+if q1 in ['c', 'C',]:
+    livecrew()
     
+    q2 = ask(c.base3 + """After taking a quick snapchat of Mars, the crew recieved a message 
+that if they could they were to travel to the next planet in the alignment. The crew
+responded that they could continue. But after they were flung out orbit, there was
+still thruster problems on the ship. As well as an incoming asteroid that was on a collison course
+for the ship. They needed to fix the thruster issue in order to avoid the incoming threat.
+The goal is still to save as many crew members as possible. To fix the thrusters complete
+problem so the crew could travel to Jupiter.
+
+(See problem sheet number two)""")
+
+    if q2 in ['a', 'A',]:
+        livecrew()
+        
+        q3 = ask(c.base3 + """The crew arrived at Jupiter. While facetiming your dog becuase you think
+the problems have settled down since the last time an issue happened: the ship has a huge tremor
+but there are no earthquakes in space. You look outside the port window and you see a strange vessel
+firing projectiles at you. You want to send a message for a cease fire. But surprise, surprise the 
+communications ray is broken and guess who has to fix it. You need to send a message quickly so your ship
+does not get destroyed.
+
+(See problem sheet number three)""")
+
+    if q2 in ['b', 'B']:
+        diecrew()
+        
+        q3 = ask(c.base3 + """The crew arrived at Jupiter. While facetiming your dog becuase you think
+the problems have settled down since the last time an issue happened: the ship has a huge tremor
+but there are no earthquakes in space. You look outside the port window and you see a strange vessel
+firing projectiles at you. You want to send a message for a cease fire. But surprise, surprise the 
+communications ray is broken and guess who has to fix it. You need to send a message quickly so your ship
+does not get destroyed.
+
+(See problem sheet number three)""")
+
+    if q2 in ['c', 'C']:
+        livecrew2()
+
+        q3 = ask(c.base3 + """The crew arrived at Jupiter. While facetiming your dog becuase you think
+the problems have settled down since the last time an issue happened: the ship has a huge tremor
+but there are no earthquakes in space. You look outside the port window and you see a strange vessel
+firing projectiles at you. You want to send a message for a cease fire. But surprise, surprise the 
+communications ray is broken and guess who has to fix it. You need to send a message quickly so your ship
+does not get destroyed.
+
+(See problem sheet number three)""")
+
+        if q3 in ['a', 'A']:
+            diecrew()
+
+            q4 = ask(c.base3 + """The next planet is fast approaching, you make contact with the vessel that was
+opening fire on you earlier and cleared up the mist understanding. They thought that you were an enemy ship
+for the current war that they have that is the cause of them being in our solarsystem. Then, to apologize,
+the creatures offer to help to make repairs on your ship.(The communication is being performed through hand
+gestures and motions. But while the supplies were being moved over from the other ship to fix the damaged one,
+on of your crew bumps into one of the species crew hard. The species crew got very angry and started to raise
+its voice very loudly. Your next problem is to find the answer to calming the crew member down and not make
+a scene so that your crew members can be safe. (The species crew looked very on edge already.
+
+(See problem sheet number four)""")
+
+        if q3 in ['b', 'B']:
+            livecrew()
+
+            q4 = ask(c.base3 + """The next planet is fast approaching, you make contact with the vessel that was
+opening fire on you earlier and cleared up the mist understanding. They thought that you were an enemy ship
+for the current war that they have that is the cause of them being in our solarsystem. Then, to apologize,
+the creatures offer to help to make repairs on your ship.(The communication is being performed through hand
+gestures and motions. But while the supplies were being moved over from the other ship to fix the damaged one,
+on of your crew bumps into one of the species crew hard. The species crew got very angry and started to raise
+its voice very loudly. Your next problem is to find the answer to calming the crew member down and not make
+a scene so that your crew members can be safe. (The species crew looked very on edge already.
+
+(See problem sheet number four)""")
+
+                    
+            if q4 in ['a', 'A']:
+                livecrew()
+
+                q5 = ask(c.base3 + """The crew and yourself are both very tired from the journey and the main
+control gave you the okay to go home. There is but one last problem that you need to sovle. The fuel is not
+being able to turn and get into the engine. You need to fix the converter so that you can use the fuel. The
+problem most likely occured when you were being chased and shot at by the creatures. Another peice that you must
+report back. But for now all you need to do to get home is solve this problem:
+
+(See problem sheet number five)""")
+
+            if q4 in ['b', 'B']:
+                diecrew()
+
+                print(c.base3 + """You could not fix the fuel problem and your ship drifted off into endless space 
+and was never heard from again.""")
