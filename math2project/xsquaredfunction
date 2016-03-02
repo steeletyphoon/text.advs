@@ -123,7 +123,7 @@ a scene so that your crew members can be safe. (The species crew looked very on 
 
                     
             if q4 in ['a', 'A']:
-                livecrew()
+                diecrew()
 
                 q5 = ask(c.base3 + """The crew and yourself are both very tired from the journey and the main
 control gave you the okay to go home. There is but one last problem that you need to sovle. The fuel is not
@@ -134,7 +134,21 @@ report back. But for now all you need to do to get home is solve this problem:
 (See problem sheet number five)""")
 
             if q4 in ['b', 'B']:
-                diecrew()
+                livecrew()
 
-                print(c.base3 + """You could not fix the fuel problem and your ship drifted off into endless space 
-and was never heard from again.""")
+                q5 = ask(c.base3 + """The crew and yourself are both very tired from the journey and the main
+control gave you the okay to go home. There is but one last problem that you need to sovle. The fuel is not
+being able to turn and get into the engine. You need to fix the converter so that you can use the fuel. The
+problem most likely occured when you were being chased and shot at by the creatures. Another peice that you must
+report back. But for now all you need to do to get home is solve this problem:
+
+(See problem sheet number five)""")
+
+
+
+
+
+
+
+
+
