@@ -107,7 +107,7 @@ a scene so that your crew members can be safe. (The species crew looked very on 
 
 (See problem sheet number four)""")
 
-        if q3 in ['b', 'B']:
+        if q3 in ['b', 'B',]:
             livecrew()
 
             q4 = ask(c.base3 + """The next planet is fast approaching, you make contact with the vessel that was
@@ -143,6 +143,11 @@ problem most likely occured when you were being chased and shot at by the creatu
 report back. But for now all you need to do to get home is solve this problem:
 
 (See problem sheet number five)""")
+
+                if q5 in ['a', 'A']:
+                    print("""You could not return to Earth and the ship wandered forever in space with no one coming to rescue you.""")
+
+                if q5 in ['b', 'B']:
 
 
 
