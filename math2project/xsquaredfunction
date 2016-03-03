@@ -9,7 +9,7 @@ def ask(question):
   print(c.reset)
   return answer
   
-name = ask(c.base3 + "What is your name?")
+name = ask(c.b + "What is your name?")
 
 def diecrew():
     print(c.red + """You have lost members of your crew, your PTSD just got
@@ -58,7 +58,7 @@ problem so the crew could travel to Jupiter.
 (See problem sheet number two)""")
 
     if q2 in ['a', 'A',]:
-        livecrew()
+        livecrew2()
         
         q3 = ask(c.base3 + """The crew arrived at Jupiter. While facetiming your dog becuase you think
 the problems have settled down since the last time an issue happened: the ship has a huge tremor
@@ -82,7 +82,7 @@ does not get destroyed.
 (See problem sheet number three)""")
 
     if q2 in ['c', 'C']:
-        livecrew2()
+        livecrew()
 
         q3 = ask(c.base3 + """The crew arrived at Jupiter. While facetiming your dog becuase you think
 the problems have settled down since the last time an issue happened: the ship has a huge tremor
